@@ -1,2 +1,2 @@
 # AngularJSContacts
-AngularJS Contacts Book Application
+Contacts Book AngularJS Application
