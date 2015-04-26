@@ -29,6 +29,7 @@ router
 router
 	.param('id', function(req, res, next) {
 		req.dbQuery = { id: parseInt(req.params.id, 10) };
+		next();
 	})
 	.route('/contact/:id')
 		.get(function (req, res) {
