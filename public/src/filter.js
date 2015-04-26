@@ -5,6 +5,14 @@ angular.module('ContactsApp')
 			return input[0].toUpperCase() + input.slice(1);
 		};
 	})
+	.filter('camelCase', function() {
+		return function(input) {
+			// First Name -> first( n)ame -> firstName
+			return input.toLowerCase().replace(/ (\w)/g, function(match, letter) {
+				return letter.toUpperCase();
+			});
+		};
+	})
 	.filter('keyFilter', function () {
 		return function (obj, query) {
 			var result = {};
