@@ -12,9 +12,13 @@ function hash(password) {
 }
 
 router
-	.use(bodyParser.urlencoded())
+	.use(bodyParser.urlencoded({ extended: true}))
 	.use(bodyParser.json())
-	.use(session({ secret: 'asldaslkhdsahdhsajdsj232jkadsjafsddsfsfdfjncv' }))
+	.use(session({ 
+		secret: 'asldaslkhdsahdhsajdsj232jkadsjafsddsfsfdfjncv',
+		resave: true,
+		saveUninitialized: true
+	}))
 	.get('/login', function (req, res) {
 		res.sendfile('public/login.html');
 	})

@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require('express'),
 	api = require('./api'),
 	users = require('./accounts'),
 	app = express();
