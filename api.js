@@ -6,10 +6,12 @@ var express = require('express'),
 	router = express.Router();
 
 router
+	// Fake the user login
+	/*
 	.use(function (req, res, next) {
 		if(!req.user) req.user = { id: 1 };
 		next();
-	})
+	}) */
 	.use(bodyParser.json())
 	.route('/contact')
 		.get(function (req, res) {
