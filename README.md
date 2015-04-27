@@ -1,7 +1,7 @@
 # AngularJSContacts
 
-This project is a simple contacts book created with AngularJS and node.js. 
-A live demo of this microblog can be viewed at http://contactbook.kylesbox.com
+This project is a simple contacts book application created with AngularJS and node.js. 
+A live demo of this application can be viewed at http://contactbook.kylesbox.com
 
 # Features
 - Ability to create a contacts book
