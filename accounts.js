@@ -14,7 +14,7 @@ function hash(password) {
 router
 	.use(bodyParser.urlencoded({ extended: true}))
 	.use(bodyParser.json())
-	.use(session({ 
+	.use(session({
 		secret: 'asldaslkhdsahdhsajdsj232jkadsjafsddsfsfdfjncv',
 		resave: true,
 		saveUninitialized: true
